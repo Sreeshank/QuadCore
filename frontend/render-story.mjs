@@ -1,0 +1,14 @@
+import { chromium } from '@playwright/test';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+const browser=await chromium.launch({channel:'msedge',headless:true,args:['--autoplay-policy=no-user-gesture-required']});
+const page=await browser.newPage({viewport:{width:1280,height:720},acceptDownloads:true});
+page.on('pageerror',e=>console.error(e.message));
+await page.goto(pathToFileURL(path.resolve('../presentation/arjun-story.html')).href);
+const pending=page.waitForEvent('download',{timeout:180000});
+await page.evaluate(()=>window.renderVideo());
+const video=await pending;
+await video.saveAs('../presentation/TaxReady-AI-Arjun-story.webm');
+await page.screenshot({path:'../presentation/arjun-story-poster.png'});
+await browser.close();
+console.log('Saved narrated Arjun story.');

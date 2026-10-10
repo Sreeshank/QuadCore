@@ -1,0 +1,28 @@
+.venv/
+node_modules/
+dist/
+data/
+*.db
+*.db-*
+.env
+__pycache__/
+.pytest_cache/
+test-results/
+playwright-report/
+*.zip
+*.tsbuildinfo
+
+# Credentials, local editor state and runtime outputs
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# Publish the requested presentation kit; keep generated source archives excluded.
+!presentation/TaxReady-AI-CapCut-kit.zip

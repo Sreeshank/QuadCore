@@ -1,0 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { AuthProvider } from './context/AuthContext';
+import { ToastProvider } from './context/ToastContext';
+import AppLayout from './layouts/AppLayout';
+import Landing from './pages/Landing';
+import Auth from './pages/Auth';
+import Profile from './pages/Profile';
+import Dashboard from './pages/Dashboard';
+import Documents from './pages/Documents';
+import DocumentDetail from './pages/DocumentDetail';
+import Checklist from './pages/Checklist';
+import Issues from './pages/Issues';
+import Assistant from './pages/Assistant';
+import Reports from './pages/Reports';
+import Privacy from './pages/Privacy';
+import './styles.css';
+if(localStorage.getItem('taxready_theme')==='dark') document.documentElement.classList.add('dark');
+const query=new QueryClient({defaultOptions:{queries:{staleTime:15000,refetchOnWindowFocus:false}}});
+ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><QueryClientProvider client={query}><AuthProvider><ToastProvider><BrowserRouter><Routes><Route path="/" element={<Landing/>}/><Route path="/auth" element={<Auth/>}/><Route path="/app" element={<AppLayout/>}><Route index element={<Dashboard/>}/><Route path="profile" element={<Profile/>}/><Route path="documents" element={<Documents/>}/><Route path="documents/:id" element={<DocumentDetail/>}/><Route path="checklist" element={<Checklist/>}/><Route path="issues" element={<Issues/>}/><Route path="assistant" element={<Assistant/>}/><Route path="reports" element={<Reports/>}/><Route path="privacy" element={<Privacy/>}/></Route><Route path="*" element={<Navigate to="/" replace/>}/></Routes></BrowserRouter></ToastProvider></AuthProvider></QueryClientProvider></React.StrictMode>);
+

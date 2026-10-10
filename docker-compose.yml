@@ -1,0 +1,40 @@
+﻿services:
+  database:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: taxready
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-demo-only}
+      POSTGRES_DB: taxready
+    volumes:
+      - taxready-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U taxready"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+  backend:
+    build: ./backend
+    environment:
+      APP_ENV: development
+      DEMO_MODE: "true"
+      DATABASE_URL: postgresql+psycopg://taxready:${POSTGRES_PASSWORD:-local-demo-only}@database:5432/taxready
+      STORAGE_BACKEND: local
+      STORAGE_DIR: /app/data/private
+      CORS_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - taxready-files:/app/data
+    depends_on:
+      database:
+        condition: service_healthy
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:5173:80"
+    depends_on:
+      - backend
+volumes:
+  taxready-db:
+  taxready-files:
+

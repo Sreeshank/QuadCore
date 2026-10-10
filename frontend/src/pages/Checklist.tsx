@@ -1,0 +1,14 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ListChecks, ArrowRight, RefreshCw, CheckCircle2, Minus, Circle, FileText } from 'lucide-react';
+import { useSummary,useAction } from '../hooks/useData';
+import { api } from '../services/api';
+import { PageHeading,Loading,ErrorState,Badge,Spinner } from '../components/ui';
+import { title } from '../utils/format';
+export default function Checklist(){
+  const query=useSummary();const [showAll,setShowAll]=useState(false);const generate=useAction(async()=>api.post('/checklist/generate'),'Checklist refreshed from your profile and records.');
+  if(query.isLoading)return <Loading/>;if(!query.data)return <ErrorState error={query.error}/>;const s=query.data;
+  const rows=s.checklist.filter(i=>showAll||i.status!=='not_applicable');
+  return <><PageHeading eyebrow="A PLAN THAT FITS YOU" title="Your preparation checklist." description="The right records, based on your financial story." actions={<button className="btn secondary" disabled={generate.isPending} onClick={()=>generate.mutate()}>{generate.isPending?<Spinner/>:<RefreshCw size={16}/>}Refresh checklist</button>}/><div className="checklist-summary card"><span className="feature-icon feature-0"><ListChecks size={28}/></span><div><h2>{s.checklist_complete} of {s.checklist_total} items complete</h2><p>Complete means the linked record's extracted fields have been reviewed for this financial year.</p></div><div className="checklist-progress"><span>{s.checklist_total?Math.round(s.checklist_complete/s.checklist_total*100):100}%</span><div className="progress-track"><span style={{width:(s.checklist_total?s.checklist_complete/s.checklist_total*100:100)+'%'}}/></div></div></div><div className="section-toolbar"><h2>Your personalized records</h2><label className="check-label"><input type="checkbox" checked={showAll} onChange={e=>setShowAll(e.target.checked)}/>Show not-applicable items</label></div><div className="checklist-items">{rows.map(i=><article className={'card checklist-item '+(i.status==='complete'?'complete':'')} key={i.id}><span className="checklist-status-icon">{i.status==='complete'?<CheckCircle2/>:i.status==='not_applicable'?<Minus/>:<Circle/>}</span><div className="checklist-copy"><div><h3>{i.title}</h3><Badge value={i.status}/></div><p>{i.description}</p><span className="category-label">{title(i.income_category)}</span></div>{i.status!=='not_applicable'&&<Link className="btn secondary" to={i.linked_document_id?'/app/documents/'+i.linked_document_id:'/app/documents'}>{i.linked_document_id?'Review record':'Add document'}<ArrowRight size={16}/></Link>}</article>)}</div><div className="guidance-note"><FileText size={20}/><p>These are configurable preparation guidelines, not universal legal requirements. Different circumstances may call for additional records. <Link to="/app/profile">Update your profile</Link> if your income sources change.</p></div></>;
+}
+

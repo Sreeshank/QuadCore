@@ -1,0 +1,8 @@
+﻿scene,start_seconds,voice_end_seconds,scene_end_with_gap,narration,playback_speed
+1,0,14.497,15.497,narration-01.wav,1.25x
+2,15.497,28.383,29.383,narration-02.wav,1.25x
+3,29.383,44.356,45.356,narration-03.wav,1.25x
+4,45.356,59.309,60.309,narration-04.wav,1.25x
+5,60.309,75.958,76.958,narration-05.wav,1.25x
+6,76.958,92.879,93.879,narration-06.wav,1.25x
+7,93.879,114.495,115.495,narration-07.wav,1.25x
