@@ -1,0 +1,156 @@
+1
+00:00:00,000 --> 00:00:00,712
+Meet Arjun.
+
+2
+00:00:00,712 --> 00:00:04,854
+Like millions of people, he works hard to build
+a better future.
+
+3
+00:00:04,854 --> 00:00:08,414
+But when tax season arrives, his confidence
+disappears.
+
+4
+00:00:08,414 --> 00:00:14,497
+Salary slips, bank statements, investment
+proofs, and endless paperwork leave him
+overwhelmed.
+
+5
+00:00:15,497 --> 00:00:17,181
+Which documents do I need?
+
+6
+00:00:17,181 --> 00:00:18,994
+How do I organize my income?
+
+7
+00:00:18,994 --> 00:00:21,131
+Am I even ready to file my taxes?
+
+8
+00:00:21,131 --> 00:00:23,980
+Arjun searches through folders and messages.
+
+9
+00:00:23,980 --> 00:00:28,383
+Every document seems important, but he cannot
+see the whole picture.
+
+10
+00:00:29,383 --> 00:00:31,294
+Then he discovers TaxReady AI.
+
+11
+00:00:31,294 --> 00:00:35,818
+He answers a few questions about his financial
+year and income sources.
+
+12
+00:00:35,818 --> 00:00:38,813
+A personalized checklist shows what to collect.
+
+13
+00:00:38,813 --> 00:00:44,356
+He uploads his Form 16, Form 26AS, and bank
+interest record into one private workspace.
+
+14
+00:00:45,356 --> 00:00:48,481
+Supported information is extracted with source
+evidence.
+
+15
+00:00:48,481 --> 00:00:53,783
+Arjun compares each value with the original
+document, corrects errors, and confirms his
+review.
+
+16
+00:00:53,783 --> 00:00:56,853
+Missing information can be transcribed from the
+source.
+
+17
+00:00:56,853 --> 00:00:59,309
+He remains in control of every confirmation.
+
+18
+00:01:00,309 --> 00:01:02,432
+A difference catches his attention.
+
+19
+00:01:02,432 --> 00:01:07,891
+Form 16 shows forty five thousand rupees in TDS,
+while Form 26AS shows forty two thousand.
+
+20
+00:01:07,891 --> 00:01:11,833
+TaxReady AI flags the three thousand rupee
+difference for review.
+
+21
+00:01:11,833 --> 00:01:15,958
+Arjun follows the source links and records what
+needs clarification.
+
+22
+00:01:16,958 --> 00:01:19,316
+Now the dashboard tells a clearer story.
+
+23
+00:01:19,316 --> 00:01:20,908
+Three records are reviewed.
+
+24
+00:01:20,908 --> 00:01:25,803
+Two checklist items still need attention, and
+one high severity difference remains.
+
+25
+00:01:25,803 --> 00:01:28,397
+His preparation score is fifty nine percent.
+
+26
+00:01:28,397 --> 00:01:32,879
+The score explains progress, while practical
+next steps show where to focus.
+
+27
+00:01:33,879 --> 00:01:36,527
+Arjun downloads his readiness report.
+
+28
+00:01:36,527 --> 00:01:42,899
+His documents, reviewed values, unresolved
+findings, and next steps are brought together.
+
+29
+00:01:42,899 --> 00:01:44,903
+Tax season feels manageable.
+
+30
+00:01:44,903 --> 00:01:47,265
+From tax confusion to confidence.
+
+31
+00:01:47,265 --> 00:01:48,124
+TaxReady AI.
+
+32
+00:01:48,124 --> 00:01:49,341
+Organize smarter.
+
+33
+00:01:49,341 --> 00:01:50,343
+Verify faster.
+
+34
+00:01:50,343 --> 00:01:51,847
+File with confidence.
+
+35
+00:01:51,847 --> 00:01:54,495
+Preparation guidance, not tax advice.

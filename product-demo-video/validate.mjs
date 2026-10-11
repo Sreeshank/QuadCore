@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import ffmpeg from 'ffmpeg-static';
+import ffprobe from 'ffprobe-static';
+const file='TaxReady_AI_Cinematic_Demo.mp4';
+const info=JSON.parse(execFileSync(ffprobe.path,['-v','error','-show_format','-show_streams','-of','json',file],{encoding:'utf8'}));
+const v=info.streams.find(s=>s.codec_type==='video'),a=info.streams.find(s=>s.codec_type==='audio');
+const checks={h264:v?.codec_name==='h264',aac:a?.codec_name==='aac',fullHD:v?.width===1920&&v?.height===1080,fps:v?.r_frame_rate==='30/1',duration:Math.abs(Number(info.format.duration)-120)<.1,frames:Number(v?.nb_frames)===3600};
+const {spawnSync}=await import('node:child_process');
+const result=spawnSync(ffmpeg,['-hide_banner','-i',file,'-vf','blackdetect=d=0.3:pix_th=0.03:pic_th=0.98','-af','volumedetect','-f','null','-'],{encoding:'utf8',maxBuffer:10*1024*1024});
+checks.fullDecode=result.status===0;checks.noBlackIntervals=!/black_start:/.test(result.stderr);checks.audibleTrack=/mean_volume: -(?!inf)\d/.test(result.stderr);
+fs.writeFileSync('validation.json',JSON.stringify({checks,format:info.format,streams:info.streams,audio:result.stderr.match(/(?:mean|max)_volume:.*$/gm),blackIntervals:result.stderr.match(/black_start:.*$/gm)||[],capture:JSON.parse(fs.readFileSync('capture-validation.json','utf8'))},null,2));
+console.log(checks);if(Object.values(checks).some(x=>!x))process.exit(1);
+fs.mkdirSync('review/final',{recursive:true});
+for(const time of [5,16,28,40,56,73,89,104,114])execFileSync(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(time),'-i',file,'-frames:v','1',`review/final/${time}s.png`]);
+fs.copyFileSync('review/final/5s.png','public/poster.png');
+console.log('Nine frames extracted from the final MP4 for visual inspection.');

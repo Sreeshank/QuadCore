@@ -1,0 +1,11 @@
+{
+  "pageErrors": [],
+  "readiness": 59,
+  "checklist": "3 of 5",
+  "tds": [
+    45000,
+    42000,
+    3000
+  ],
+  "source": "Real UI interactions with synthetic records"
+}

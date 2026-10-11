@@ -1,0 +1,12 @@
+TAXREADY AI ? UPDATED CAPCUT KIT
+
+1. Extract the ZIP. Open Preview-gallery.html to browse the assets.
+2. Import scenes 01?07 into a 1920x1080, 30 fps CapCut project.
+3. Place narration-01 through narration-07 in order, at 1.25x speed with pitch preservation. Use Timeline.csv for boundaries.
+4. Import Arjun-captions.srt and fine-tune timing by listening.
+5. Insert current app screenshots 08?22 where suggested in CapCut-editing-guide.md.
+6. Use document previews 23?27 and transparent PNGs as optional overlays.
+7. Export H.264 MP4, 1080p, 30 fps.
+
+27 scene/app/document images, 5 transparent layers, 7 narration WAVs, 5 synthetic PDFs, script, captions, timing sheet, guide and offline gallery.
+No real API keys, tokens or customer records are included.

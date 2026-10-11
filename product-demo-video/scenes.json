@@ -1,0 +1,71 @@
+[
+  {
+    "start": 0,
+    "duration": 10,
+    "title": "Tax filing shouldn't be complicated.",
+    "label": "A CLEARER START",
+    "text": "Tax season should begin with confidence. Not a search through scattered paperwork. Meet a clearer way to prepare: TaxReady AI."
+  },
+  {
+    "start": 10,
+    "duration": 12,
+    "title": "Scattered documents. Missing information.",
+    "label": "THE CHALLENGE",
+    "text": "Form sixteen. Form twenty six A S. Annual information statements. Bank records. When every detail lives somewhere different, knowing what is missing can feel overwhelming."
+  },
+  {
+    "start": 22,
+    "duration": 13,
+    "title": "Meet TaxReady AI.",
+    "label": "YOUR WORKSPACE",
+    "clip": "intro",
+    "text": "TaxReady AI brings your preparation into one organized workspace. This is the real application, using synthetic demo records. Follow Sammer from scattered documents to clear, practical next steps."
+  },
+  {
+    "start": 35,
+    "duration": 13,
+    "title": "Personalized tax readiness.",
+    "label": "01 / TELL YOUR STORY",
+    "clip": "profile",
+    "text": "Start with your financial year and income sources. Salary, bank interest, or other income: your answers shape a personalized preparation checklist. Update your profile whenever your financial story changes."
+  },
+  {
+    "start": 48,
+    "duration": 17,
+    "title": "From documents to organized data.",
+    "label": "02 / UPLOAD AND REVIEW",
+    "clip": "upload",
+    "text": "Upload your sample documents. The application extracts supported fields and organizes the records. Open a document to review the values alongside source evidence. Your confirmation matters: extracted information stays reviewable, and the original remains available for comparison."
+  },
+  {
+    "start": 65,
+    "duration": 17,
+    "title": "Identify differences before filing.",
+    "label": "03 / COMPARE YOUR RECORDS",
+    "clip": "issues",
+    "text": "Now compare the uploaded records. Form sixteen shows forty five thousand rupees in T D S. Form twenty six A S shows forty two thousand. The three thousand rupee difference is highlighted for review. This compares your documents; it does not verify government records."
+  },
+  {
+    "start": 82,
+    "duration": 16,
+    "title": "Know what's ready. And what's missing.",
+    "label": "04 / UNDERSTAND YOUR PROGRESS",
+    "clip": "dashboard",
+    "text": "The dashboard explains your preparation progress. Here, three of five checklist items are complete, and the reviewed sample reaches fifty nine percent readiness. Missing records and the unresolved difference remain visible. Every next step is grounded in the current workspace."
+  },
+  {
+    "start": 98,
+    "duration": 12,
+    "title": "Clarity before filing.",
+    "label": "05 / TAKE THE NEXT STEP",
+    "clip": "reports",
+    "text": "Generate a private readiness report. Capture your document checklist, supported income summary, open findings, and score breakdown. Download the PDF to carry a clear snapshot into your next review."
+  },
+  {
+    "start": 110,
+    "duration": 10,
+    "title": "From tax confusion to confidence.",
+    "label": "TAXREADY AI",
+    "text": "Organize smarter. Verify faster. TaxReady AI. From tax confusion to confidence. Your preparation, brought together."
+  }
+]

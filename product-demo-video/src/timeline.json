@@ -1,0 +1,277 @@
+{
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 10,
+      "title": "Tax filing shouldn't be complicated.",
+      "label": "A CLEARER START",
+      "text": "Tax season should begin with confidence. Not a search through scattered paperwork. Meet a clearer way to prepare: TaxReady AI.",
+      "voiceStart": 0.65,
+      "voiceDuration": 8.480063,
+      "speechRate": 1.1321061176470588
+    },
+    {
+      "start": 10,
+      "duration": 12,
+      "title": "Scattered documents. Missing information.",
+      "label": "THE CHALLENGE",
+      "text": "Form sixteen. Form twenty six A S. Annual information statements. Bank records. When every detail lives somewhere different, knowing what is missing can feel overwhelming.",
+      "voiceStart": 10.65,
+      "voiceDuration": 10.484771,
+      "speechRate": 1.2868934285714286
+    },
+    {
+      "start": 22,
+      "duration": 13,
+      "title": "Meet TaxReady AI.",
+      "label": "YOUR WORKSPACE",
+      "clip": "intro",
+      "text": "TaxReady AI brings your preparation into one organized workspace. This is the real application, using synthetic demo records. Follow Sammer from scattered documents to clear, practical next steps.",
+      "voiceStart": 22.65,
+      "voiceDuration": 11.485125,
+      "speechRate": 1.2845193913043478
+    },
+    {
+      "start": 35,
+      "duration": 13,
+      "title": "Personalized tax readiness.",
+      "label": "01 / TELL YOUR STORY",
+      "clip": "profile",
+      "text": "Start with your financial year and income sources. Salary, bank interest, or other income: your answers shape a personalized preparation checklist. Update your profile whenever your financial story changes.",
+      "voiceStart": 35.65,
+      "voiceDuration": 11.485313,
+      "speechRate": 1.2914837391304348
+    },
+    {
+      "start": 48,
+      "duration": 17,
+      "title": "From documents to organized data.",
+      "label": "02 / UPLOAD AND REVIEW",
+      "clip": "upload",
+      "text": "Upload your sample documents. The application extracts supported fields and organizes the records. Open a document to review the values alongside source evidence. Your confirmation matters: extracted information stays reviewable, and the original remains available for comparison.",
+      "voiceStart": 48.65,
+      "voiceDuration": 15.486729,
+      "speechRate": 1.279101741935484
+    },
+    {
+      "start": 65,
+      "duration": 17,
+      "title": "Identify differences before filing.",
+      "label": "03 / COMPARE YOUR RECORDS",
+      "clip": "issues",
+      "text": "Now compare the uploaded records. Form sixteen shows forty five thousand rupees in T D S. Form twenty six A S shows forty two thousand. The three thousand rupee difference is highlighted for review. This compares your documents; it does not verify government records.",
+      "voiceStart": 65.65,
+      "voiceDuration": 15.485083,
+      "speechRate": 1.2333055483870967
+    },
+    {
+      "start": 82,
+      "duration": 16,
+      "title": "Know what's ready. And what's missing.",
+      "label": "04 / UNDERSTAND YOUR PROGRESS",
+      "clip": "dashboard",
+      "text": "The dashboard explains your preparation progress. Here, three of five checklist items are complete, and the reviewed sample reaches fifty nine percent readiness. Missing records and the unresolved difference remain visible. Every next step is grounded in the current workspace.",
+      "voiceStart": 82.65,
+      "voiceDuration": 14.486958,
+      "speechRate": 1.299732551724138
+    },
+    {
+      "start": 98,
+      "duration": 12,
+      "title": "Clarity before filing.",
+      "label": "05 / TAKE THE NEXT STEP",
+      "clip": "reports",
+      "text": "Generate a private readiness report. Capture your document checklist, supported income summary, open findings, and score breakdown. Download the PDF to carry a clear snapshot into your next review.",
+      "voiceStart": 98.65,
+      "voiceDuration": 10.486958,
+      "speechRate": 1.365424857142857
+    },
+    {
+      "start": 110,
+      "duration": 10,
+      "title": "From tax confusion to confidence.",
+      "label": "TAXREADY AI",
+      "text": "Organize smarter. Verify faster. TaxReady AI. From tax confusion to confidence. Your preparation, brought together.",
+      "voiceStart": 110.65,
+      "voiceDuration": 8.485042,
+      "speechRate": 1.3344644705882354
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.65,
+      "end": 4.46602835,
+      "text": "Tax season should begin with confidence. Not a search"
+    },
+    {
+      "start": 4.46602835,
+      "end": 8.2820567,
+      "text": "through scattered paperwork. Meet a clearer way to prepare:"
+    },
+    {
+      "start": 8.2820567,
+      "end": 9.130063,
+      "text": "TaxReady AI."
+    },
+    {
+      "start": 10.65,
+      "end": 14.42451756,
+      "text": "Form sixteen. Form twenty six A S. Annual information"
+    },
+    {
+      "start": 14.42451756,
+      "end": 18.19903512,
+      "text": "statements. Bank records. When every detail lives somewhere different,"
+    },
+    {
+      "start": 18.19903512,
+      "end": 21.134771,
+      "text": "knowing what is missing can feel overwhelming."
+    },
+    {
+      "start": 22.65,
+      "end": 26.34164732142857,
+      "text": "TaxReady AI brings your preparation into one organized workspace."
+    },
+    {
+      "start": 26.34164732142857,
+      "end": 30.033294642857143,
+      "text": "This is the real application, using synthetic demo records."
+    },
+    {
+      "start": 30.033294642857143,
+      "end": 33.72494196428571,
+      "text": "Follow Sammer from scattered documents to clear, practical next"
+    },
+    {
+      "start": 33.72494196428571,
+      "end": 34.135125,
+      "text": "steps."
+    },
+    {
+      "start": 35.65,
+      "end": 39.21440748275862,
+      "text": "Start with your financial year and income sources. Salary,"
+    },
+    {
+      "start": 39.21440748275862,
+      "end": 42.77881496551724,
+      "text": "bank interest, or other income: your answers shape a"
+    },
+    {
+      "start": 42.77881496551724,
+      "end": 46.34322244827586,
+      "text": "personalized preparation checklist. Update your profile whenever your financial"
+    },
+    {
+      "start": 46.34322244827586,
+      "end": 47.135313,
+      "text": "story changes."
+    },
+    {
+      "start": 48.65,
+      "end": 52.41704218918919,
+      "text": "Upload your sample documents. The application extracts supported fields"
+    },
+    {
+      "start": 52.41704218918919,
+      "end": 56.18408437837838,
+      "text": "and organizes the records. Open a document to review"
+    },
+    {
+      "start": 56.18408437837838,
+      "end": 59.95112656756757,
+      "text": "the values alongside source evidence. Your confirmation matters: extracted"
+    },
+    {
+      "start": 59.95112656756757,
+      "end": 63.718168756756754,
+      "text": "information stays reviewable, and the original remains available for"
+    },
+    {
+      "start": 63.718168756756754,
+      "end": 64.136729,
+      "text": "comparison."
+    },
+    {
+      "start": 65.65,
+      "end": 68.8174033409091,
+      "text": "Now compare the uploaded records. Form sixteen shows forty"
+    },
+    {
+      "start": 68.8174033409091,
+      "end": 71.98480668181818,
+      "text": "five thousand rupees in T D S. Form twenty"
+    },
+    {
+      "start": 71.98480668181818,
+      "end": 75.15221002272727,
+      "text": "six A S shows forty two thousand. The three"
+    },
+    {
+      "start": 75.15221002272727,
+      "end": 78.31961336363636,
+      "text": "thousand rupee difference is highlighted for review. This compares"
+    },
+    {
+      "start": 78.31961336363636,
+      "end": 81.13508300000001,
+      "text": "your documents; it does not verify government records."
+    },
+    {
+      "start": 82.65,
+      "end": 85.90956555000001,
+      "text": "The dashboard explains your preparation progress. Here, three of"
+    },
+    {
+      "start": 85.90956555000001,
+      "end": 89.1691311,
+      "text": "five checklist items are complete, and the reviewed sample"
+    },
+    {
+      "start": 89.1691311,
+      "end": 92.42869665,
+      "text": "reaches fifty nine percent readiness. Missing records and the"
+    },
+    {
+      "start": 92.42869665,
+      "end": 95.68826220000001,
+      "text": "unresolved difference remain visible. Every next step is grounded"
+    },
+    {
+      "start": 95.68826220000001,
+      "end": 97.136958,
+      "text": "in the current workspace."
+    },
+    {
+      "start": 98.65,
+      "end": 101.9045731724138,
+      "text": "Generate a private readiness report. Capture your document checklist,"
+    },
+    {
+      "start": 101.9045731724138,
+      "end": 105.15914634482759,
+      "text": "supported income summary, open findings, and score breakdown. Download"
+    },
+    {
+      "start": 105.15914634482759,
+      "end": 108.41371951724139,
+      "text": "the PDF to carry a clear snapshot into your"
+    },
+    {
+      "start": 108.41371951724139,
+      "end": 109.136958,
+      "text": "next review."
+    },
+    {
+      "start": 110.65,
+      "end": 115.74102520000001,
+      "text": "Organize smarter. Verify faster. TaxReady AI. From tax confusion"
+    },
+    {
+      "start": 115.74102520000001,
+      "end": 119.135042,
+      "text": "to confidence. Your preparation, brought together."
+    }
+  ]
+}

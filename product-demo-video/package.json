@@ -1,0 +1,30 @@
+{
+  "name": "product-demo-video",
+  "version": "1.0.0",
+  "description": "Authentic TaxReady AI cinematic product demo production",
+  "scripts": {
+    "capture": "node capture.mjs",
+    "prepare": "node prepare-media.mjs",
+    "render": "node render.mjs",
+    "stills": "node render.mjs --stills",
+    "validate": "node validate.mjs",
+    "studio": "remotion studio src/index.tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "dependencies": {
+    "@playwright/test": "^1.64.0",
+    "@remotion/bundler": "^4.0.534",
+    "@remotion/cli": "^4.0.534",
+    "@remotion/renderer": "^4.0.534",
+    "@types/react": "^19.3.0",
+    "ffmpeg-static": "^5.3.0",
+    "ffprobe-static": "^3.1.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.534",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

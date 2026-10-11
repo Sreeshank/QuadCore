@@ -24,5 +24,6 @@ playwright-report/
 Thumbs.db
 .idea/
 .vscode/
+.vercel/
 # Publish the requested presentation kit; keep generated source archives excluded.
 !presentation/TaxReady-AI-CapCut-kit.zip

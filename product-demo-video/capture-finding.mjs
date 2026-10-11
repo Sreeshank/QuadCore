@@ -1,0 +1,8 @@
+// Optional targeted pickup, using a separate synthetic workspace.
+import {chromium} from '@playwright/test';
+const b=await chromium.launch({channel:'msedge',headless:true});const c=await b.newContext({viewport:{width:1600,height:900}});const p=await c.newPage();const base='http://127.0.0.1:5173';
+await p.goto(base+'/auth?demo=sample');await p.getByRole('button',{name:'Enter demo workspace'}).click();await p.getByRole('heading',{name:'Welcome back, Sammer.'}).waitFor();
+for(const name of ['form16.pdf','form26as.pdf','bank-interest.pdf']){await p.goto(base+'/app/documents');await p.getByRole('link',{name:new RegExp(name.replace('.','\\.'))}).click();await p.getByRole('button',{name:'Confirm reviewed fields'}).click();await p.getByRole('button',{name:'Confirm verification',exact:true}).click();await p.getByRole('dialog').waitFor({state:'hidden'});}
+const state=await p.evaluate(()=>Object.fromEntries(Object.entries(sessionStorage)));await c.close();
+const rec=await b.newContext({viewport:{width:1600,height:900},recordVideo:{dir:'public/raw',size:{width:1600,height:900}}});const page=await rec.newPage();await page.addInitScript(s=>{for(const[k,v]of Object.entries(s))sessionStorage.setItem(k,v)},state);
+await page.goto(base+'/app/issues');await page.getByRole('heading',{name:'TDS discrepancy detected'}).waitFor();await page.getByLabel('Filter by severity').selectOption('high');await page.locator('.issue-card').evaluate(el=>el.scrollIntoView({block:'center',behavior:'smooth'}));await page.waitForTimeout(8000);await page.screenshot({path:'public/issues.png'});const v=page.video();await rec.close();await v.saveAs('public/raw/issues.webm');await b.close();console.log('Focused real TDS finding pickup saved.');
